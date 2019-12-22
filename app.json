@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/config/config"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTitleText": "破釜沉舟学习机",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "iconPath": "assets/img/time.png",
+        "selectedIconPath": "assets/img/time-1.png",
+        "pagePath": "pages/index/index",
+        "text": "破釜沉舟计时器"
+      },
+      {
+        "iconPath": "assets/img/config.png",
+        "selectedIconPath": "assets/img/config-1.png",
+        "pagePath": "pages/config/config",
+        "text": "破釜沉舟设置机"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap53.json"
+}

@@ -1,0 +1,36 @@
+
+
+<view class="time">
+  <view class="big-circle blue first">
+
+  </view>
+  <view animation="{{leftAnimationData}}" class="big-circle blue1 right first">
+    
+  </view>
+  <view class="circle white first">
+    <view>{{leftTime}}s</view>
+  </view>
+
+
+
+  </view>
+  <view class="btnGroup">
+    <button class="btn" bindtap="leftStart">开始学习</button>
+  </view>
+
+
+
+<!-- 循环播放 -->
+<audio  src="{{src}}" action="{{action}}"  loop></audio>
+
+
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <block wx:for="{{actionSheetItems}}">
+    <action-sheet-item class="item" bindtap="bindItemTap" id="{{item.id}}">{{item.name}}</action-sheet-item>
+  </block>
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+<view class="sent1">破釜沉舟</view>
+<view class="sent2">百二秦关终属楚</view>
+<view class="sent3">卧薪尝胆</view>
+<view class="sent4">三千越甲可吞吴</view>

@@ -1,0 +1,24 @@
+<view>
+
+<view class="section-title">
+设置<switch id="config1" class="pull-right" checked bindchange="switchChange"/>
+</view>
+<view class="hr"></view>
+<view >
+    <text class="SET" >设置时间(second)</text>
+    <slider id="config1"  bindchange="sliderChange" show-value min="300" max="3600" value="{{configs.config1.time}}"/>
+</view>
+<view >
+    <text>选择提醒时间</text>
+    <radio-group  id="config1"  class="voice"  bindchange="radioChange">
+        <label><radio value="120" checked/>提前2分钟</label>
+        <label><radio value="300"/>提前5分钟</label>
+        <label><radio value="600"/>提前10分钟</label>
+    </radio-group>
+</view>
+</view>
+<view class="word1">千淘万漉虽辛苦</view>
+<view class="word2">吹尽狂沙始到金</view>
+<view class="word3">少年辛苦终成事</view>
+<view class="word4">莫向光阴惰寸功</view>
+
